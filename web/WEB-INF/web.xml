@@ -40,6 +40,10 @@
         <servlet-name>ServletPostre</servlet-name>
         <servlet-class>controlador.ServletPostre</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletEnviar</servlet-name>
+        <servlet-class>controlador.ServletEnviar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletValidaLogin</servlet-name>
         <url-pattern>/ServletValidaLogin</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>ServletPostre</servlet-name>
         <url-pattern>/ServletPostre</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletEnviar</servlet-name>
+        <url-pattern>/ServletEnviar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Alumno_2DAW
  */
-public class ServletBebida extends HttpServlet {
+public class ServletEnviar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +37,10 @@ public class ServletBebida extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletBebida</title>");            
+            out.println("<title>Servlet ServletEnviar</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ServletBebida at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ServletEnviar at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -73,12 +73,10 @@ public class ServletBebida extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd;
-        String bebida = request.getParameter("bebida");
-        String numeroBebida = request.getParameter("numeroBebida");
+        String enviado = request.getParameter("envio");
         HttpSession sesion = request.getSession();
-        sesion.setAttribute("bebida", bebida);
-        sesion.setAttribute("numeroBebida", numeroBebida);
-        rd = request.getRequestDispatcher("/postres.jsp");
+        sesion.setAttribute("enviado", enviado);
+        rd = request.getRequestDispatcher("/listaPedido.jsp");
         rd.forward(request, response);
     }
 

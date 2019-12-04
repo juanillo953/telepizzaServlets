@@ -95,6 +95,7 @@ public class ServletValidaLogin extends HttpServlet {
             }
             if(conta==1){
                 HttpSession sesion = request.getSession();
+                sesion.setMaxInactiveInterval(600);
                 sesion.setAttribute("usuario", usuarioEncontrado);
                 rd = request.getRequestDispatcher("/ofertas.jsp");
                 rd.forward(request, response);       
