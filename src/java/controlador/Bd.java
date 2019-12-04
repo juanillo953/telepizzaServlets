@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import modelo.Pedido;
 import modelo.Usuario;
 
 /**
@@ -64,4 +65,21 @@ public class Bd {
    
        return usuarios;
    }
+      public List<Pedido> obtenerOfertas(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from ofertas";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
 }

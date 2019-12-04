@@ -4,15 +4,27 @@
     Author     : Alumno_2DAW
 --%>
 
+<%@page import="modelo.Pedido"%>
+<%@page import="java.util.List"%>
+<%@page import="controlador.Bd"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="modelo.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%HttpSession sesion = request.getSession();
+if(sesion.getAttribute("usuario")== null){
+    ServletContext contexto = getServletContext();
+    RequestDispatcher rd = contexto.getRequestDispatcher("/index.html");
+    rd.forward(request, response);
+}
 Usuario usuario = (Usuario)sesion.getAttribute("usuario");
+String nombre = usuario.getNombre();
 SimpleDateFormat formateador1= new SimpleDateFormat("dd/MM/yyyy");
 SimpleDateFormat formateador2= new SimpleDateFormat("kk:mm:ss");
 String fecha = formateador1.format(sesion.getCreationTime());
 String hora = formateador2.format(sesion.getCreationTime());
+Bd bd = new Bd();
+bd.abrirConexion();
+List<Pedido> pedidos = bd.obtenerOfertas();
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,11 +38,17 @@ String hora = formateador2.format(sesion.getCreationTime());
 	text-align: right;
 	font-weight: bold;
 }
-
+.centro{
+  text-align: center;
+}
+select{
+  height: 7vh;
+}
 </style>
 </head>
 
 <body>
+
 <table width="100%" border="0">
   <tr bordercolor="#FF0000" bgcolor="#FF0000">
     <td width="4%" bgcolor="#FFFFFF">&nbsp;</td>
@@ -51,7 +69,20 @@ String hora = formateador2.format(sesion.getCreationTime());
   </tr>
   <tr>
       <td width="4%" bgcolor="#FFFFFF">&nbsp;</td>
-      <td align="left" width="46%"></td>
+      <td align="left" width="46%" class="centro">
+          <select name="oferta" id="">
+            <option value="">-------</option>
+            <%for(int contador = 0;contador<pedidos.size();contador++){%>
+            <option value="<%=pedidos.get(contador).getDescripcion()%>"><%=pedidos.get(contador).getDescripcion()%></option>
+            <%}%>
+          </select>
+          <select name="numeroOferta" id="">
+              <option value="1">1</option>
+              <%for(int contador = 2;contador<10;contador++){%>
+              <option value="<%=contador%>"><%=contador%></option>
+              <%}%>
+            </select>
+      </td>
       <td align="right" colspan="2"><h6>Bienvenido <%=usuario.getNombre()%><br>Usted ha accedido a nuestra zona de pedidos a las <%=hora%> del <%=fecha%></h6><img src="images/images_2016/pizzas.jpg" alt=""></td>
        <td width="7%" bgcolor="#FFFFFF"></td>
   </tr>
