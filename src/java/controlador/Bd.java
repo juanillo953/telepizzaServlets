@@ -82,4 +82,141 @@ public class Bd {
        }
           return pedidos;
       }
+      public List<Pedido> obtenerMenus(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from menus";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+      
+      public List<Pedido> obtenerPizza(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from pizzas";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+       public List<Pedido> obtenerEntrante(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from entrante";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(3);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+       public List<Pedido> obtenerHamburguesa(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from hambueguesa";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+       public List<Pedido> obtenerPasta(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from pasta";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+       public List<Pedido> obtenerEnsalada(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from ensaladas";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+      public List<Pedido> obtenerBebida(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from bebidas";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
+       public List<Pedido> obtenerPostre(){
+          List<Pedido> pedidos = new ArrayList<Pedido>();
+          String sql = "Select * from postre";
+       try {
+           pst = conn.prepareStatement(sql);
+           rs = pst.executeQuery();
+           while(rs.next()){
+            int id = rs.getInt(1);
+            String descripcion = rs.getString(2);
+            Pedido pedido = new Pedido(id, descripcion);
+            pedidos.add(pedido);
+           }
+       } catch (SQLException ex) {
+           Logger.getLogger(Bd.class.getName()).log(Level.SEVERE, null, ex);
+       }
+          return pedidos;
+      }
 }

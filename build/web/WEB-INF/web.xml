@@ -4,9 +4,81 @@
         <servlet-name>ServletValidaLogin</servlet-name>
         <servlet-class>controlador.ServletValidaLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletOferta</servlet-name>
+        <servlet-class>controlador.ServletOferta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletMenu</servlet-name>
+        <servlet-class>controlador.ServletMenu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletPizza</servlet-name>
+        <servlet-class>controlador.ServletPizza</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletEntrante</servlet-name>
+        <servlet-class>controlador.ServletEntrante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletHamburguesa</servlet-name>
+        <servlet-class>controlador.ServletHamburguesa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletPasta</servlet-name>
+        <servlet-class>controlador.ServletPasta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletEnsalada</servlet-name>
+        <servlet-class>controlador.ServletEnsalada</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletBebida</servlet-name>
+        <servlet-class>controlador.ServletBebida</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletPostre</servlet-name>
+        <servlet-class>controlador.ServletPostre</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletValidaLogin</servlet-name>
         <url-pattern>/ServletValidaLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletOferta</servlet-name>
+        <url-pattern>/ServletOferta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletMenu</servlet-name>
+        <url-pattern>/ServletMenu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletPizza</servlet-name>
+        <url-pattern>/ServletPizza</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletEntrante</servlet-name>
+        <url-pattern>/ServletEntrante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletHamburguesa</servlet-name>
+        <url-pattern>/ServletHamburguesa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletPasta</servlet-name>
+        <url-pattern>/ServletPasta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletEnsalada</servlet-name>
+        <url-pattern>/ServletEnsalada</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletBebida</servlet-name>
+        <url-pattern>/ServletBebida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletPostre</servlet-name>
+        <url-pattern>/ServletPostre</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
