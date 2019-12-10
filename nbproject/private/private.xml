@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/entrante.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletMenu.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/ensalada.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletValidaLogin.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/pasta.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletPostre.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletEntrante.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/Bd.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletPasta.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/ofertas.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/modelo/Usuario.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletHamburguesa.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletEnviar.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/errorLogin.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletOferta.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/menu.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/postres.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletPizza.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/hamburguesa.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/modelo/Pedido.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/pizza.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletBebida.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/src/java/controlador/ServletEnsalada.java</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/pedido.jsp</file>
+            <file>file:/C:/Users/Alumno_2DAW/Documents/NetBeansProjects/telepizza/web/bebidas.jsp</file>
+        </group>
+    </open-files>
+</project-private>

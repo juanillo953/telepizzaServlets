@@ -88,11 +88,10 @@ List<Pedido> pedidos = bd.obtenerPostre();
                                             <td colspan="2">&nbsp;</td>
                                             <td width="7%" bgcolor="#FFFFFF">&nbsp;</td>
                                         </tr>
-                                        <form action="ServletEnviar" method="post">
                                         <tr>
                                             <td width="4%" bgcolor="#FFFFFF">&nbsp;</td>
                                             <td align="left" width="88%" class="centro">
-                                                    <form action="">
+                                                    <form action="mostrarPedido.jsp" method="POST">
                                                         <div class="medio">
                                                             <input type="radio"  name="envio" value="domicilio">Entrega a domicilio<br>
                                                         </div>
