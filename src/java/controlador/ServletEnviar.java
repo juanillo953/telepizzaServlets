@@ -73,6 +73,7 @@ public class ServletEnviar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd;
+                request.setCharacterEncoding("UTF-8");
         String enviado = request.getParameter("envio");
         HttpSession sesion = request.getSession();
         sesion.setAttribute("enviado", enviado);

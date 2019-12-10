@@ -78,6 +78,7 @@ public class ServletValidaLogin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd;
+                request.setCharacterEncoding("UTF-8");
         String user = request.getParameter("txtUsuario");
         String pass = request.getParameter("txtClave");
         Bd bd = new Bd();

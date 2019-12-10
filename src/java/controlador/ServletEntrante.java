@@ -73,6 +73,7 @@ public class ServletEntrante extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                 RequestDispatcher rd;
+                        request.setCharacterEncoding("UTF-8");
         String entrante = request.getParameter("entrante");
         String numeroEntrante = request.getParameter("numeroEntrante");
         HttpSession sesion = request.getSession();

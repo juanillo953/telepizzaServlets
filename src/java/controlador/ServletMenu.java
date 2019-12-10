@@ -73,6 +73,7 @@ public class ServletMenu extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                RequestDispatcher rd;
+                       request.setCharacterEncoding("UTF-8");
         String menu = request.getParameter("menu");
         String numeroMenu = request.getParameter("numeroMenu");
         HttpSession sesion = request.getSession();

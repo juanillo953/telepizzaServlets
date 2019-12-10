@@ -73,6 +73,7 @@ public class ServletPasta extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                 RequestDispatcher rd;
+                        request.setCharacterEncoding("UTF-8");
         String pasta = request.getParameter("pasta");
         String numeroPasta = request.getParameter("numeroPasta");
         HttpSession sesion = request.getSession();

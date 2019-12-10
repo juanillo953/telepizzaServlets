@@ -73,6 +73,7 @@ public class ServletOferta extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd;
+                request.setCharacterEncoding("UTF-8");
         String oferta = request.getParameter("oferta");
         String numeroOferta = request.getParameter("numeroOferta");
         HttpSession sesion = request.getSession();

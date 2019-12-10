@@ -73,6 +73,7 @@ public class ServletBebida extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher rd;
+        request.setCharacterEncoding("UTF-8");
         String bebida = request.getParameter("bebida");
         String numeroBebida = request.getParameter("numeroBebida");
         HttpSession sesion = request.getSession();

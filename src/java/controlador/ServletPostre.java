@@ -73,6 +73,7 @@ public class ServletPostre extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
                 RequestDispatcher rd;
+                        request.setCharacterEncoding("UTF-8");
         String postre = request.getParameter("postre");
         String numeroPostre = request.getParameter("numeroPostre");
         HttpSession sesion = request.getSession();
