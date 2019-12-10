@@ -93,9 +93,11 @@ List<Pedido> pedidos = bd.obtenerPostre();
                                             <td align="left" width="88%" class="centro">
                                                     <form action="mostrarPedido.jsp" method="POST">
                                                         <div class="medio">
+                                                                <img src="images/images_2016/scooter.png" width="150" height="150" alt=""><br>
                                                             <input type="radio"  name="envio" value="domicilio">Entrega a domicilio<br>
                                                         </div>
                                                         <div class="medio">
+                                                                <img src="images/images_2016/compras.png" width="150" height="150" alt=""><br>
                                                             <input type="radio"  name="envio" value="tienda">Recoger en tienda<br>
                                                         </div>
                                                         <div class="entero"><input type="submit" value="Aceptar"></div>
